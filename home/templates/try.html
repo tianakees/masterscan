@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Street View</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #street-view {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="street-view"></div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sin!4v1486541273698!6m8!1m7!1sbGN-CJyNXm_VrFGdQNQ7Ow!2m2!1d1.308362096499567!2d103.6757261169975!3f82.74758925534685!4f-14.104045175717985!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <script>
+      var panorama;
+      function initialize() {
+        panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('street-view'),
+            {
+              position: {lat: 1.3083621, lng: ,103.6757261},
+              pov: {heading: 165, pitch: 0},
+              zoom: 1
+            });
+      }
+    </script>
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsiIDqpOHx4rPqZ3lh5fv-gQVj6ICvzfA&callback=initialize">
+    </script>
+  </body>
+</html>
