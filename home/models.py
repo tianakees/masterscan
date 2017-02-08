@@ -12,4 +12,4 @@ class submissions(models.Model):
 		verbose_name_plural = 'Submissions'
 
 	def __str__(self):
-		return self.Name+' - '+self.email+'-'+self.subject
+		return self.name+' - '+self.email+'-'+self.subject
