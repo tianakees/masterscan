@@ -67,7 +67,7 @@
 		
 		<!-- Modernizer Script for old Browsers -->		
         <script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
-
+       
 
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -78,6 +78,10 @@
 		  ga('create', 'UA-54152927-1', 'auto');
 		  ga('send', 'pageview');
 		
+
+			$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
 		</script>
 	
     </head>
@@ -187,8 +191,17 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#showcase">Our Works</a></li>
-                        
+
+                        <li  >
+						<a href="#main-features" >Certifications
+							<!-- <img src="{% static 'img/portfolio/1.jpg' %}" alt="Masterscan"> -->
+						</a>
+						</li>
                         <li><a href="#contact-us">Contact</a></li>
+
+
+
+
                     </ul>
                 </nav> 
 				<!-- /main nav -->
@@ -265,53 +278,133 @@
 		<!--
 		Start Main Features
 		==================================== -->
-	<!-- 	<section id="main-features">
+		<section id="main-features">
 			<div class="container">
 				<div class="row">
 					
 					<div id="features">
-						<div class="item">
-							
-							<div class="features-item">
-								
-								<div class="col-md-6 feature-media media-wrapper wow fadeInUp" data-wow-duration="500ms">
-									<iframe src="http://player.vimeo.com/video/108018156" allowfullscreen></iframe>
-								</div>
-								
-								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms"
-									<h3>Main Features of Masterscan</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-									<a href="#" class="btn btn-transparent">Learn More</a>
-									<a href="#" class="btn btn-transparent">Purchase Theme</a>
-								</div>
-								
-							</div>
-						</div>
 						
+
+
+
+
 						<div class="item">
 							<div class="features-item">
 							
 								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
-									<img src="{% static 'img/blog/3D-beach-art.jpg' %}" alt="3D Beach Art | Masterscan" class="img-responsive">
+									<center><img src="{% static 'img/portfolio/cert1.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
 								</div>
 								
 								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-									<h3>Main Features of Masterscan</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, dolores corporis maxime modi amet nisi quod delectus voluptas deleniti facere. Suscipit, modi ex magni quam nesciunt ullam nemo natus soluta!</p>
-									<a href="#" class="btn btn-transparent">Learn More</a>
-									<a href="#" class="btn btn-transparent">Purchase Theme</a>
+									 
+									<h3>Biz Safe Star</h3>
+									
 								</div>
 								
 							</div>
 						</div>
+
+
+
+						<div class="item">
+							<div class="features-item">
+							
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<center><img src="{% static 'img/portfolio/cert2.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
+								</div>
+								
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									 
+									<h3>DNV GL</h3>
+									
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="features-item">
+							
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<center><img src="{% static 'img/portfolio/cert3.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
+								</div>
+								
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									 
+									<h3>ISO 14001 | OHSAS 18001</h3>
+									
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="features-item">
+							
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<center><img src="{% static 'img/portfolio/cert4.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
+								</div>
+								
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									 
+									<h3>MasterScan</h3>
+									
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="features-item">
+							
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<center><img src="{% static 'img/portfolio/cert5.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
+								</div>
+								
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									 
+									<h3>SAC - SINGLAS</h3>
+									
+								</div>
+								
+							</div>
+						</div>
+
+
+						<div class="item">
+							<div class="features-item">
+							
+								<div class="col-md-6 feature-media wow fadeInUp" data-wow-duration="500ms">
+									<center><img src="{% static 'img/portfolio/cert6.jpg' %}" alt="Masterscan" class="img-responsive"></center>
+									
+								</div>
+								
+								<div class="col-md-6 feature-desc wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+									 
+									<h3>SMEs ASIA AWARD</h3>
+									
+								</div>
+								
+							</div>
+						</div>
+
+
+					
+
 					</div>
 					
 				</div> 		
 			</div>   	
 		</section>   
-		 -->
+		
 		<!--
 		Start Counter Section
 		==================================== -->
